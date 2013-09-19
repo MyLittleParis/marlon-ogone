@@ -1,5 +1,5 @@
 {
-    "name": "marlon-be/marlon-ogone",
+    "name": "mylittleparis/marlon-ogone",
     "autoload": {
         "psr-0": { "Ogone": "lib/" }
     }
