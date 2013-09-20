@@ -178,7 +178,7 @@ class PaymentRequest
 		if(!is_int($amount)) {
 			throw new InvalidArgumentException("Integer expected. Amount is always in cents");
 		}
-		if($amount <= 0) {
+		if($amount < 0) {
 			throw new InvalidArgumentException("Amount must be a positive number");
 		}
 		if($amount >= 1.0E+15) {
@@ -380,7 +380,12 @@ class PaymentRequest
 	{
 		foreach($this->requiredfields as $field)
 		{
-			if(empty($this->parameters[$field])) {
+                        if($field == 'amount') {
+                                if(!isset($this->parameters[$field])) {
+                                    throw new RuntimeException("$field can not be empty");
+                                }
+                        }
+                        else if(empty($this->parameters[$field])) {
 				throw new RuntimeException("$field can not be empty");
 			}
 		}
