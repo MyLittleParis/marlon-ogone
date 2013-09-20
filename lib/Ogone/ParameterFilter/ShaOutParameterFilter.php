@@ -21,6 +21,7 @@ class ShaOutParameterFilter implements ParameterFilter
 		'DIGESTCARDNO', 'ECI', 'ED', 'ENCCARDNO', 'IP', 'IPCTY', 'NBREMAILUSAGE',
 		'NBRIPUSAGE', 'NBRIPUSAGE_ALLTX', 'NBRUSAGE', 'NCERROR', 'ORDERID', 'PAYID',
 		'PM', 'SCO_CATEGORY', 'SCORING', 'STATUS', 'SUBSCRIPTION_ID', 'TRXDATE', 'VC',
+                'ALIAS'
 	);
 
 	public function filter(array $parameters)
