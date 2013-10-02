@@ -86,7 +86,9 @@ class PaymentRequest
 		'ownerzip', 'owneraddress', 'ownercty', 'ownertown', 'ownertelno', 'accepturl',
 		'declineurl', 'exceptionurl', 'cancelurl', 'complus', 'paramplus', 'pm',
 		'brand', 'title', 'bgcolor', 'txtcolor', 'tblbgcolor', 'tbltxtcolor', 'buttonbgcolor',
-		'buttontxtcolor', 'logo', 'fonttype', 'tp', 'paramvar', 'alias', 'aliasusage', 'aliasoperation'
+		'buttontxtcolor', 'logo', 'fonttype', 'tp', 'paramvar', 
+                'alias', 'aliasusage', 'aliasoperation',
+                'operation'
 	);
 
 	private $requiredfields = array(
