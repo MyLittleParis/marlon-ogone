@@ -249,9 +249,7 @@ class PaymentRequest
 
 	public function setOwnerTown($ownertown)
 	{
-		if(strlen($ownertown) > 25) {
-			throw new InvalidArgumentException("Owner town is too long");
-		}
+		$ownertown = substr($ownertown, 0, 25);
 		$this->parameters['ownertown'] = $ownertown;
 	}
 
